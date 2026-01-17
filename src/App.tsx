@@ -11,6 +11,7 @@ import Calendar from "./pages/Calendar";
 
 // Layouts
 import RootLayout from "./layouts/RootLayout";
+import Taskboard from "./pages/Taskboard";
 
 function App() {
   const router = createBrowserRouter(
@@ -18,6 +19,7 @@ function App() {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="calendar" element={<Calendar />} />
+        <Route path="task" element={<Taskboard />} />
       </Route>
     )
   );
